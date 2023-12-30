@@ -1,7 +1,3 @@
-output "public_sg_id" {
-  value = aws_security_group.public_sg.id
-}
-
 output "vpc_id" {
   value = aws_vpc.my_vpc.id
 }

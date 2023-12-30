@@ -1,8 +1,3 @@
-variable "inbound_ports" {
-  type    = list(number)
-  default = [22, 80, 5000]
-}
-
 variable "region" {
   default = "ap-south-1"
 }

@@ -11,7 +11,7 @@ variable "instance_count" {
   default = 1
 }
 
-variable "instance_security_group_ids"{
-  type = list(string)
-  description = "list of security group ids for ec2 instance"
+variable "inbound_ports" {
+  type    = list(number)
+  default = [22, 80, 5000]
 }
