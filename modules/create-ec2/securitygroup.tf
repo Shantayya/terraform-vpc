@@ -8,7 +8,7 @@ resource "aws_security_group" "private_sg" {
       from_port   = ingress.value
       to_port     = ingress.value
       protocol    = "tcp"
-      cidr_blocks = [var.vpc_cidr]
+      cidr_blocks = ["10.0.0.0/16"]
     }
   }
   egress {
