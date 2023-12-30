@@ -10,3 +10,8 @@ variable "instance_count" {
   type    = number
   default = 1
 }
+
+variable "instance_security_group_ids"{
+  type = list(string)
+  description = "list of security group ids for ec2 instance"
+}
