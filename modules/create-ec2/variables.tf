@@ -10,3 +10,7 @@ variable "instance_count" {
   type    = number
   default = 1
 }
+
+variable "key"{
+  default = "terraform.pem"
+}
