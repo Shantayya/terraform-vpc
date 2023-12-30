@@ -4,11 +4,11 @@ resource "aws_security_group" "private_sg" {
   dynamic "ingress" {
     for_each = var.inbound_ports
     content {
-      description      = "allow traffic on ${ingress.value}"
-      from_port        = ingress.value
-      to_port          = ingress.value
-      protocol         = "tcp"
-      cidr_blocks      = [var.vpc_cidr]
+      description = "allow traffic on ${ingress.value}"
+      from_port   = ingress.value
+      to_port     = ingress.value
+      protocol    = "tcp"
+      cidr_blocks = [var.vpc_cidr]
     }
   }
   egress {

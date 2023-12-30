@@ -7,7 +7,7 @@ output "vpc_id" {
 }
 
 output "ec2-ip" {
-  value = modules.create-ec2[*].public_ip
+  value = module.server.ec2_ip
 }
 
 output "public_subnet_id" {
